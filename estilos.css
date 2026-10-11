@@ -1,0 +1,48 @@
+@font-face { font-family: "Playfair Display"; src: url("playfair_display.ttf"); font-weight: 400 900; font-display: swap; }
+@font-face { font-family: "Jost"; src: url("jost.ttf"); font-weight: 100 900; font-display: swap; }
+:root {
+  color-scheme: light;
+  --tinta: #1b2433; --marfil: #f4eedf; --laton: #c9a35a;
+  --laton-oscuro: #8a6418; --laton-claro: #e3c383; --vino: #8e2a2e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  font: 17px/1.6 "Jost", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--tinta); background: var(--marfil);
+}
+h1, h2 { font-family: "Playfair Display", Georgia, serif; }
+.envoltura { max-width: 46rem; margin: 0 auto; padding: 0 20px 64px; }
+header { background: var(--tinta); color: var(--laton-claro); padding: 40px 20px 36px; text-align: center; }
+header h1 { margin: 0 0 .25em; font-size: 2.3rem; }
+header p { margin: 0; color: var(--marfil); opacity: .9; font-size: 1.05rem; }
+/* La franja del poste de barbería, como en la app. */
+.franja {
+  height: 6px;
+  background: repeating-linear-gradient(135deg,
+    var(--vino) 0 10px, var(--marfil) 10px 20px, var(--tinta) 20px 30px, var(--marfil) 30px 40px);
+}
+h2 { color: var(--laton-oscuro); font-size: 1.3rem; margin-top: 2.2em; }
+.descarga {
+  display: block; max-width: 22rem; margin: 28px auto 8px;
+  background: var(--laton); color: var(--tinta); text-decoration: none;
+  text-align: center; padding: 16px 20px; border-radius: 12px;
+  font-size: 1.15rem; font-weight: 600;
+}
+.descarga:hover { background: var(--laton-claro); }
+.bajo-boton { text-align: center; color: #5b6170; font-size: .95rem; margin: 0 0 8px; }
+ul, ol { padding-left: 1.2em; }
+li { margin: .45em 0; }
+ol li { margin: .6em 0; }
+.aviso, .destacado {
+  background: #fbf7ec; border: 1px solid #dccfae; border-left: 4px solid var(--laton);
+  padding: 12px 16px; border-radius: 6px; margin: 1.5em 0;
+}
+.fecha { color: #5b6170; font-size: .95rem; margin-top: 0; }
+.pagina { padding-top: 24px; }
+.pagina h1 { font-size: 1.8rem; margin-bottom: .2em; }
+footer {
+  margin-top: 3em; padding: 20px; border-top: 1px solid #dccfae;
+  color: #5b6170; font-size: .9rem; text-align: center;
+}
+a { color: var(--laton-oscuro); }
